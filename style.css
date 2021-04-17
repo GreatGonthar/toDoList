@@ -1,0 +1,29 @@
+.container {
+    border: 1px solid silver;
+    height: 500px;
+    width: 400px;
+    margin: 20px auto;
+}
+.my_list {
+    border: 1px solid darkred;
+    min-height: 300px;
+    margin: 20px 20px 20px;
+}
+.to_do_button {
+    display: block;
+    height: 50px;
+    width: 100px;
+    margin: auto auto;
+}
+header {
+    border: 1px solid gray;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header > div {
+    background: greenyellow;
+    height: 30px;
+    /* width: 60px; */
+}
