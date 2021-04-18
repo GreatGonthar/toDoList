@@ -5,9 +5,15 @@
     margin: 20px auto;
 }
 .my_list {
+    word-break: break-all;
     border: 1px solid darkred;
     min-height: 300px;
     margin: 20px 20px 20px;
+    list-style-position: inside;
+    padding-left: 0px;
+}
+li {
+    padding-left: 20px;
 }
 .to_do_button {
     display: block;
@@ -15,15 +21,19 @@
     width: 100px;
     margin: auto auto;
 }
-header {
+nav {
     border: 1px solid gray;
     height: 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-header > div {
-    background: greenyellow;
-    height: 30px;
+nav > div {
+    border: 1px solid burlywood;
+    height: 26px;
     /* width: 60px; */
 }
+li:nth-child(odd) {
+    background: #eee; /* Цвет фона */
+    /* color: #fff; Цвет текста     */
+   } 
