@@ -11,9 +11,22 @@
     margin: 20px 20px 20px;
     list-style-position: inside;
     padding-left: 0px;
+    position: relative;
 }
 li {
+    /* display: inline; */
     padding-left: 20px;
+    min-height: 40px;
+    /* max-width: 250px; */
+}
+.trash-button {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    right: 1px;
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1MVicZXGFpch64TgeTmBZLa17eoStaiLFNA&usqp=CAU) no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 .to_do_button {
     display: block;
