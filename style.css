@@ -1,8 +1,9 @@
 .container {
     border: 1px solid silver;
-    height: 500px;
+    min-height: 500px;
     width: 400px;
     margin: 20px auto;
+    padding-bottom: 20px;
 }
 .my_list {
     word-break: break-all;
@@ -14,10 +15,20 @@
     position: relative;
 }
 li {
-    /* display: inline; */
     padding-left: 20px;
     min-height: 40px;
-    /* max-width: 250px; */
+}
+.gray-strings {
+    background: snow;
+}
+.gray-strings:nth-child(odd) {
+    background: #eee; /* Цвет фона */
+    /* color: #fff; Цвет текста     */
+   } 
+.li-change {
+    background: coral;
+    border-bottom: 1px solid silver;
+    list-style-image: url(http://htmlbook.ru/themes/hb/img/icon_yes2.png);
 }
 .trash-button {
     height: 40px;
@@ -46,7 +57,4 @@ nav > div {
     height: 26px;
     /* width: 60px; */
 }
-li:nth-child(odd) {
-    background: #eee; /* Цвет фона */
-    /* color: #fff; Цвет текста     */
-   } 
+

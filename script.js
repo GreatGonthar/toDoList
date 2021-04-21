@@ -10,27 +10,24 @@ let todayDateInDOM = document.querySelector(".today_date");
 let myButton = document.querySelector(".to_do_button");
 let myList = document.querySelector(".my_list");
 
-myButton.onclick = (() => {
+myButton.onclick = (() => { //TODO: создать отдельную функцию делающую ЭТО, еще она должна принимать текст, который будет в итоге выводится в наш список
   let newLi = document.createElement('li');
+  newLi.classList.add("gray-strings");
   let newTrashButton = document.createElement('button');
-  newTrashButton.classList.add("trash-button");
-  
-// TODO сделать изменение строчек при клике, с помощью добавления специального класса
+  newTrashButton.classList.add("trash-button");  
+
   newLi.onclick = (() => {
-    newLi.style.background = "coral";
-    newLi.style.listStyleImage = "url(http://htmlbook.ru/themes/hb/img/icon_yes2.png)";
+    newLi.classList.toggle("gray-strings");
+    newLi.classList.toggle("li-change");    
   });
+
   newTrashButton.onclick = (() => {
-    newLi.style.background = "red";    
+    newLi.remove();
   });
+
   newLi.textContent = (prompt("что сделать?", "ничего"));
   myList.append(newLi);
-  myList.append(newTrashButton); // TODO чтобы корзина нормально работала
+  newLi.append(newTrashButton);
 });
-  // myList.innerHTML += "<li>" + (prompt("что сделать?", "ничего")) + "</li>");
-
-
-// let myLi = document.querySelectorAll("li");
-
-
+// TODO: записывать полученные данные в объект. и потом создавать строки в списке на основе этого объекта
 todayDateInDOM.textContent = today.toLocaleString("ru", dateOptions);
