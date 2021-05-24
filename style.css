@@ -1,4 +1,9 @@
-.container {
+* {
+    font-family: 'Rubik', sans-serif;
+    border-radius: 5px;
+}
+
+.container {    
     border: 1px solid silver;
     min-height: 500px;
     width: 400px;
@@ -6,8 +11,13 @@
     padding-bottom: 20px;
 }
 .my_list {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: start;
     word-break: break-all;
     border: 1px solid darkred;
+    color: #161623;
     min-height: 300px;
     margin: 20px 20px 20px;
     list-style-position: inside;
@@ -31,10 +41,12 @@ li {
     list-style-image: url(http://htmlbook.ru/themes/hb/img/icon_yes2.png);
 }
 .trash-button {
-    height: 40px;
-    width: 40px;
-    position: absolute;
+    display: inline-block;
     right: 1px;
+    border: 1px solid darkred;
+    height: 38px;
+    width: 38px;
+    position: absolute;
     background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1MVicZXGFpch64TgeTmBZLa17eoStaiLFNA&usqp=CAU) no-repeat;
     background-position: center;
     background-size: cover;
@@ -57,4 +69,23 @@ nav > div {
     height: 26px;
     /* width: 60px; */
 }
+.left_arrow, .right_arrow {
+    height: 30px;
+    width: 30px;
+    background: url(https://img2.freepng.ru/20180204/ukq/kisspng-arrow-button-icon-right-arrow-transparent-background-5a77bc2a5e28a5.6543905615177963943857.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.left_arrow {
+    transform: rotate(180deg);
+}
+.left_arrow:hover, .right_arrow:hover {
+    cursor: pointer;
+}
+.left_arrow:active, .right_arrow:active{
+    height: 130%;
+}
+
+
+
 
